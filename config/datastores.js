@@ -15,9 +15,18 @@
 
 module.exports.datastores = {
   default: {
-    adapter: require("sails-mongo"),
-    url: "mongodb://root@localhost/storebase",
-    // url:
-    //   "mongodb://storeusername:storepassword@cluster0.tj57e.gcp.mongodb.net:27017/storedatabase",
+    adapter: "sails-mongo",
+    // url: "mongodb://root@localhost/storebase",
+    url:
+      "mongodb://storeusername:storepassword@cluster0-shard-00-00.tj57e.gcp.mongodb.net:27017,cluster0-shard-00-01.tj57e.gcp.mongodb.net:27017,cluster0-shard-00-02.tj57e.gcp.mongodb.net:27017/storedatabase?ssl=true&replicaSet=atlas-6lgfeq-shard-0&authSource=admin&retryWrites=true&w=majority",
   },
+
+  // mongodb: {
+  //   adapter: require("sails-mongo"),
+  //   host: "cluster0.tj57e.gcp.mongodb.net",
+  //   port: 27017,
+  //   user: "storeusername",
+  //   password: "storepassword",
+  //   database: "storedatabase",
+  // },
 };

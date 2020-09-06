@@ -27,21 +27,22 @@ module.exports.routes = {
     },
   },
 
-  "GET /": "StoreController.list",
+  "GET /": "StorecollectionsController.list",
 
-  "GET /category/fashion/items": "StoreController.fashion",
+  "GET /category/fashion/items": "StorecollectionsController.fashion",
 
-  "GET /category/electronics/items": "StoreController.electronics",
+  "GET /category/electronics/items": "StorecollectionsController.electronics",
 
-  "GET /category/kitchenware/items": "StoreController.kitchenware",
+  "GET /category/kitchenware/items": "StorecollectionsController.kitchenware",
 
-  "GET /setindex": "StoreController.setindex",
+  "GET /setindex": "StorecollectionsController.setindex",
 
-  "GET /search": "StoreController.search",
+  "GET /search": "StorecollectionsController.search",
 
-  "GET /checkout": "StoreController.checkout",
+  "GET /checkout": "StorecollectionsController.checkout",
 
-  "GET /add/:itemid": "StoreController.addToCart",
+  "GET /add/:itemid": "StorecollectionsController.addToCart",
 
-  "GET /category/:category/items/:itemid": "StoreController.itemdetail",
+  "GET /category/:category/items/:itemid":
+    "StorecollectionsController.itemDetail",
 };

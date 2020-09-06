@@ -44,9 +44,12 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     default: {
-      adapter: "sails-mongo",
-      url:
-        "mongodb+srv://storeuser:storepassword@cluster0.czk8q.mongodb.net/StoreSails?retryWrites=true&w=majority",
+      adapter: require("sails-mongo"),
+      host: "cluster0.tj57e.gcp.mongodb.net",
+      port: 27017,
+      user: "storeusername",
+      password: "storepassword",
+      database: "storedatabase",
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -68,7 +71,7 @@ module.exports = {
        * https://sailsjs.com/config/datastores                                     *
        *                                                                           *
        ****************************************************************************/
-      // ssl: true,
+      ssl: true,
     },
   },
 
