@@ -44,6 +44,7 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     default: {
+      //@DEV CHECK THE INFO CORRECTLY BEFORE PRODUCTION
       adapter: require("sails-mongo"),
       host: "cluster0.tj57e.gcp.mongodb.net",
       port: 27017,

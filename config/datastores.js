@@ -16,7 +16,7 @@
 module.exports.datastores = {
   default: {
     adapter: "sails-mongo",
-    // url: "mongodb://root@localhost/storebase",
+    // url: "mongodb://root@localhost/storebase",  //for local development
     url:
       "mongodb://storeusername:storepassword@cluster0-shard-00-00.tj57e.gcp.mongodb.net:27017,cluster0-shard-00-01.tj57e.gcp.mongodb.net:27017,cluster0-shard-00-02.tj57e.gcp.mongodb.net:27017/storedatabase?ssl=true&replicaSet=atlas-6lgfeq-shard-0&authSource=admin&retryWrites=true&w=majority",
   },
